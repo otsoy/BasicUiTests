@@ -6,14 +6,8 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.otsoi.utils.ConfigReader;
 
-import java.time.Duration;
-
-public class BasePage
+public abstract class BasePage
 {
-    private static final int TIMEOUT_IN_SEC = 5;
-    private static final Duration TIMEOUT = Duration.ofSeconds(5);
-    private static final Duration POLLING = Duration.ofMillis(100);
-
     protected WebDriver driver;
     protected WebDriverWait wait;
     protected ConfigReader configReader;

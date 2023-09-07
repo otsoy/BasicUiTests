@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.otsoi.context.TestContext;
 import org.otsoi.utils.ConfigReader;
 
-public class BaseTestSteps {
+public  abstract class BaseTestSteps {
     TestContext testContext;
     ConfigReader configReader;
     private WebDriver driver;
